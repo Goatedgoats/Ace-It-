@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "AceTab",
+  "description": "An extension created by AceTheExams to help you study for your exams!",
+  "action": {
+    "default_icon": "icon48.png"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "new-tab.html"
+  },
+  "permissions": ["alarms", "storage"]
+}

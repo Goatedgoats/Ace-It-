@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>New Tab</title>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+ <center>
+  <div class="uo">
+  <div id="search">
+   <h1 style="font-size: 60px;" id="time" class="time-header">Ace It!</h1>
+   <div id="searchbox" class="searchbox-container">
+    <input id="textbox" type="text" placeholder="Search..." autocomplete="off" autofocus >
+
+    <button id="searchbtn"><img height="21.5" src="seach.png"></button>
+   </div>
+  </div>
+
+  <div id="sesel" >
+   <p style="font-size:30px;"><b><img height="28=" style="vertical-align: middle" src="gear.png">Settings</b></h1>
+
+   <br>
+   <div style="display: flex;flex-wrap: wrap;justify-content: space-between;width: 400pxl">
+    <div onclick="pur()" style="border-style: solid;border-width: 1px;border-color: rgba(215, 215, 215, 0.613);border-radius:6px;width: 48%;height: 100px;background:linear-gradient(to bottom, #0f0c29, #302b63, #24243e);margin-bottom: 10px;"></div>
+    <div onclick="sea()" style="border-style: solid;border-width: 1px;border-color: rgba(215, 215, 215, 0.613);border-radius:6px;width: 48%;height: 100px;background:linear-gradient(#11278a, #478cc6);margin-bottom: 10px;"></div>
+    <div onclick="blue()" style="border-style: solid;border-width: 1px;border-color: rgba(215, 215, 215, 0.613);border-radius: 6px;width: 48%;height: 100px;background:linear-gradient(#0077b6, #081844);margin-bottom: 10px;"></div>
+    <div onclick="gren()" style="border-style: solid;border-width: 1px;border-color: rgba(215, 215, 215, 0.613); border-radius:6px;width: 48%;height: 100px;background:linear-gradient(#97ABFF, #123597);margin-bottom: 10px;"></div>
+  </div>
+  <input type="radio" id="google" name="search" value="google">
+    <label for="google">Google</label>
+    <input type="radio" id="bing" name="search" value="bing">
+    <label for="bing">Bing</label>
+  </div>
+
+  <div id="fav">
+   <div id="shortcut-container" class="sortable"></div>
+   <div id="add-shortcut-button-container">
+    <center><button id="add-shortcut-button">Add Shortcut</button></center>
+   </div>
+   <div id="modal" class="modal">
+    <div class="modal-content">
+     <div class="close" id="close">CLOSE</div>
+     <h2>Add Shortcut</h2>
+     <p align="left" style="padding-left: 12px;">Name:</p>
+     <input type="text" id="name" class="add" name="name" required>
+     <br><br>
+     <p align="left" style="padding-left: 12px;">URL:<p>
+     <input type="url" id="url" class="add" name="url" required>
+     <br>
+     <button id="ads" class="url">Add</button>
+     <br><br>
+    </div>
+   </div>
+  </div>
+ </div>
+ </center>
+  
+ <ul>
+  <li id="sets" class="settin"><img height="28=" style="vertical-align: middle" src="gear.png"> Settings</li>
+  <li id="music" class="music"><img id="mu" height="28=" style="vertical-align: middle" src="muted.png"> Ambient Noise</li>
+ </ul>
+
+ <script src="jq.js"></script>
+ <script src="ji.js"></script>
+ <script src="script.js"></script>
+ <audio id="fireAudio" src="fire.mp3" loop></audio>
+</body>
+</html>
